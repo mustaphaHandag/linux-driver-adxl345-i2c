@@ -1,5 +1,31 @@
-Our goal is to implement the Linux operating systemon an embedded target, while exploring in detail the boot mechanisms, from bootloader
-loading to application level. We will also study the various elements required in this
-process, such as the kernel, device tree, initial file system, root file system, as well as
-the initialization process. Finally, we will explore device drivers and implement one
-on our embedded Linux system.
+# Driver Linux pour capteur ADXL345 (I2C)
+
+## Objectif
+Implementer un systeme Linux embarque et developper un driver noyau pour l'accelerometre ADXL345, en explorant toute la chaine : bootloader, kernel, device tree, systeme de fichiers racine, jusqu'a l'ecriture d'un module noyau communiquant en I2C avec le capteur.
+
+## Contenu du depot
+
+• adxl345.c : driver noyau Linux en C pour le capteur ADXL345 (bus I2C)
+
+• Makefile : compilation du module noyau
+
+• TP1-Embedded Linux.pdf, TP2.pdf, TP3.pdf : sujets des travaux pratiques (boot embarque, kernel, device drivers)
+
+## Competences mises en oeuvre
+
+• Mecanismes de boot embarque (bootloader vers kernel vers rootfs)
+
+• Configuration du device tree
+
+• Communication I2C entre le noyau Linux et un peripherique materiel
+
+• Compilation d'un module noyau et tests sur environnement virtualise QEMU
+
+## Compilation
+make
+
+## Tests
+Le driver a ete developpe et teste sur un environnement Linux embarque virtualise avec QEMU.
+
+## Contexte
+Projet realise dans le cadre du Master 2 Systemes Embarques et Traitement de l'Information, Universite Paris-Saclay.
